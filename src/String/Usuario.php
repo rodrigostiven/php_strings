@@ -1,6 +1,6 @@
 <?php
 
-namespace String;
+namespace App\String;
 
 class Usuario
 {
@@ -11,7 +11,7 @@ class Usuario
     {
         $nomeSobrenome = explode(" ", $nome, 2);
 
-        if($nomeSobrenome[0] === " ") {
+        if($nomeSobrenome[0] === null) {
             $this->nome = "Nome inválido";
         } else {
             $this->nome = $nomeSobrenome[0];
